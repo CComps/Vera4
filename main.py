@@ -52,7 +52,7 @@ say("Ahoj som vera a rada ti pomôžem nájsť čo potrebuješ.")
 if __name__ == "__main__":
     while True:
         message = takeCommand()
-        r = requests.get(f'http://192.168.1.38:5000/?text={message}')
+        r = requests.get(f'http://87.197.163.192:5000/?text={message}')
         if "http" in r.text:
             webbrowser.open(r.text)
         else:
